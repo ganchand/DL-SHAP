@@ -31,7 +31,7 @@ from scipy.stats import spearmanr
 from statsmodels.stats.multitest import multipletests
 import os
 
-from AgeNet_Model import build_model
+from DL_Model import build_model
 from DataProcessing import data_processing
 
 seed = 100     # random seed for reproducibility
@@ -55,8 +55,8 @@ early_call_train = tf.keras.callbacks.EarlyStopping(monitor='val_loss', min_delt
 
 n_splits = 10
 batch_size = 64
-n_epoch = 300
-rate = 0.01
+n_epoch = 1000
+rate = 0.05
 
 # Set up KFold cross-validation
 cv = KFold(n_splits=n_splits, random_state=123, shuffle=True)
