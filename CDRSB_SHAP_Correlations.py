@@ -27,6 +27,7 @@ def calculate_spearman_corr_pval(df, target_column):
 
     return result
 
+# load the SHAP values of each ROI with the respective CDRSB score for each participant
 cn_AvgSHAP_CDR_brainage = pd.read_csv('SHAP values of ROIs belonging to CN category.csv')  # format should be CDRSB, ROI1, ROI2, ..., ROIlast
 mci_AvgSHAP_CDR_brainage = pd.read_csv('SHAP values of ROIs belonging to MCI category.csv')  # format should be CDRSB, ROI1, ROI2, ..., ROIlast
 ad_AvgSHAP_CDR_brainage = pd.read_csv('SHAP values of ROIs belonging to AD category.csv')  # format should be CDRSB, ROI1, ROI2, ..., ROIlast
