@@ -39,7 +39,7 @@ seed = 100     # random seed for reproducibility
 np.random.seed(seed)
 tf.random.set_seed(seed)
 
-data_file = 'path to data CSV file'   # should be in the format ROI1, ROI2, ROI3, ..., ROIlast, Age, Subject ID
+data_file = 'path to data CSV file'   # should be in the format ROI1, ROI2, ROI3, ..., ROIlast, MMSE, Subject ID
 
 X, y, Predictor, input_shape = data_processing(data_file)
 
