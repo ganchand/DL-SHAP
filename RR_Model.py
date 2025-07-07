@@ -19,7 +19,7 @@ from sklearn.linear_model import Ridge
 
 from DataProcessing import data_processing
 
-data_file = 'path to data CSV file'   # should be in the format ROI1, ROI2, ROI3, ..., ROIlast, Age, Subject ID
+data_file = 'path to data CSV file'   # should be in the format ROI1, ROI2, ROI3, ..., ROIlast, MMSE, Subject ID
 
 X, y, Predictor, input_shape = data_processing(data_file)
 
