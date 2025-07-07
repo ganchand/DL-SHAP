@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, RobustScaler
 from sklearn.metrics import confusion_matrix, accuracy_score
 
-from AgeNet_Model import build_model
+from DL_Model import build_model
 from DataProcessing import data_processing
 
 seed = 100     # random seed for reproducibility
@@ -34,7 +34,7 @@ for i, (train_index, test_index) in enumerate(cv.split(X)):
         X_train = scaler.fit_transform(X_train)
         X_test = scaler.transform(X_test)
         
-        model = load_model(f'path to the saved trained AgeNet-model.h5')
+        model = load_model(f'path to the saved trained DL-model.h5')
         
         Predictions = model.predict(X_test)
         score1_test = model.evaluate(X_test, y_test, verbose=0)
