@@ -56,8 +56,8 @@ early_call_train = tf.keras.callbacks.EarlyStopping(monitor='val_loss', min_delt
 
 n_splits = 10
 batch_size = 64
-n_epoch = 300
-rate = 0.01
+n_epoch = 1000
+rate = 0.05
 
 # Set up KFold cross-validation
 cv = KFold(n_splits=n_splits, random_state=123, shuffle=True)
