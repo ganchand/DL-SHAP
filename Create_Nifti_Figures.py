@@ -5,7 +5,7 @@ import os
 
 def create_nifti(muse_csv_path, nifti_template_path, data):
     """
-    Generate a NIfTI image with data values mapped to brain ROIs.
+    Generate a NIfTI image with data values (SHAP values in our case) mapped to brain ROIs.
 
     Parameters:
     - muse_csv_path (str): Path to the MUSE ROI CSV file.
